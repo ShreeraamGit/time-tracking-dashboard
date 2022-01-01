@@ -1,8 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
- body {
+
+body {
      background-color: hsl(226, 43%, 10%);
      color: white;
      display: flex;
@@ -10,6 +7,9 @@
      justify-content: center;
      padding: 5rem;
      overflow: hidden;
+     border-width: 1px;
+     border-style: solid;
+     height: 100vh;
  }
 
  .main-container {
@@ -17,4 +17,35 @@
      border-style: solid;
      width: fit-content;
      height: fit-content;
+     display: flex;
+     flex-direction: row;
  }
+
+ .first-container {
+     border-width: 1px;
+     border-style: solid;
+     width: fit-content;
+     height: fit-content;
+ }
+
+ .gridcontainer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+  }
+  .first-container{
+      border-width: 1px;
+      border-style: solid;
+      margin-right: 20px;
+  }
+
+  .category{
+      border-width: 1px;
+      border-style: solid;
+  }
+  
