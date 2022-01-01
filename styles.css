@@ -8,10 +8,10 @@ html {
     color: white;
     padding-right: 10rem;
     padding-left: 10rem;
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden;
 }
 .main-container {
-    border-width: 1px;
-    border-style: solid;
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -20,18 +20,57 @@ html {
 
 .first-container {
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     width: fit-content;
     height: fit-content;
-    padding: 2rem;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(235, 46%, 20%);
+    border-radius: 15px;
+    font-size: 18px;
 }
 
-.name-box img {
+.first-box {
+    border-width: 1px;
+    border-style: none;
+    background-color: hsl(246, 80%, 60%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    border-radius: 15px;
+}
+
+.profile-image img {
     width: 70px;
     height: 70px;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.second-box {
+    background-color:hsl(235, 46%, 20%);
+    padding: 2rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-width: 1px;
+    border-style: none;
+}
+
+.second-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.timings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 130px;
+    font-weight: 300;
 }
 
 .gridcontainer {  display: grid;
@@ -44,15 +83,15 @@ html {
      ". . ."
      ". . .";
  }
- .first-container{
-     border-width: 1px;
-     border-style: solid;
-     margin-right: 20px;
- }
 
  .category{
      border-width: 1px;
      border-style: solid;
+ }
+
+ .reports-for p {
+     font-size: small;
+     font-weight: 300;
  }
  
 
