@@ -4,9 +4,9 @@ module.exports = {
     extend: {
       colors: {
         'page-background': '#0C1323',
-        'work':'#35397B',
-        'play':'#1E204A',
-        'study':'#20214B',
+        'work':'#FF8B64',
+        'play':'#54C3E6',
+        'study':'#FF5E7D',
         'excercise':'#4AD082',
         'social':'#7234D2',
         'selfcare':'#F1C75A',

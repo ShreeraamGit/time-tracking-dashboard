@@ -15,77 +15,115 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-page-background w-screen h-screen text-white font-main lg:flex lg:flex-col lg:justify-center lg:px-40 px-5 py-14 lg:overflow-hidden">
+<body class="bg-page-background w-screen h-screen text-white font-main lg:flex lg:flex-col lg:justify-center lg:px-32 px-5 py-14 lg:overflow-hidden">
   <div class="main-container flex lg:flex-row flex-col lg:h-fit lg:w-full h-full w-full">
-    <div class="first-container lg:w-3/12 rounded-xl bg-[#1E204A] lg:mr-8">
+    <div class="first-container h-full lg:w-3/12 rounded-xl bg-[#1E204A] mb-8 lg:mb-0 lg:mr-8">
       <div class="reports-for rounded-xl p-7 bg-profile flex lg:flex-col flex-row lg:items-start items-center">
         <img class="lg:mr-0 mr-8 border-2 border-white rounded-full lg:mb-7 w-16 h-16 lg:w-20 lg:h-20" src="/images/image-jeremy.png" alt="profile-photo">
-        <div class="name lg:mb-14">
+        <div class="name lg:mb-16">
           <p class="text-sm">Report for</p>
           <h1 class="lg:text-5xl text-2xl font-light">Jeremy Robson</h1>
         </div>
       </div>
       <div class="timings p-7 flex flex-row justify-around lg:flex-col bg-[#1E204A] rounded-xl">
-        <div class="daily lg:mb-5">Daily</div>
-        <div class="weekly lg:mb-5">Weekly</div>
-        <div class="monthly">Monthly</div>
+        <div class="daily lg:mb-4 cursor-pointer">Daily</div>
+        <div class="weekly lg:mb-4 cursor-pointer">Weekly</div>
+        <div class="monthly cursor-pointer">Monthly</div>
       </div>
     </div>
-    <div class="second-container lg:w-9/12 border">
-      Work
-      5hrs <!-- daily -->
-      Previous - 7hrs <!-- daily -->
-      32hrs <!-- weekly -->
-      Previous - 36hrs <!-- weekly -->
-      103hrs <!-- monthly -->
-      Previous - 128hrs <!-- monthly -->
-
-      Play
-      1hr <!-- daily -->
-      Previous - 2hrs <!-- daily -->
-      10hrs <!-- weekly -->
-      Previous - 8hrs <!-- weekly -->
-      23hrs <!-- monthly -->
-      Previous - 29hrs <!-- monthly -->
-
-      Study
-      0hrs <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      4hrs <!-- weekly -->
-      Previous - 7hrs <!-- weekly -->
-      13hrs <!-- monthly -->
-      Previous - 19hrs <!-- monthly -->
-
-      Exercise
-      1hr <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      4hrs <!-- weekly -->
-      Previous - 5hrs <!-- weekly -->
-      11hrs <!-- monthly -->
-      Previous - 18hrs <!-- monthly -->
-
-      Social
-      1hr <!-- daily -->
-      Previous - 3hrs <!-- daily -->
-      5hrs <!-- weekly -->
-      Previous - 10hrs <!-- weekly -->
-      21hrs <!-- monthly -->
-      Previous - 23hrs <!-- monthly -->
-
-      Self Care
-      0hrs <!-- daily -->
-      Previous - 1hr <!-- daily -->
-      2hrs <!-- weekly -->
-      Previous - 2hrs <!-- weekly -->
-      7hrs <!-- monthly -->
-      Previous - 11hrs <!-- monthly -->
+    <div class="second-container h-fit lg:h-full lg:w-9/12 grid lg:grid-cols-3 lg:gap-8 gap-8">
+      <div class="work bg-work flex flex-col rounded-xl w-full h-fit">
+        <div class="overlay w-full h-12 flex justify-end">
+          <img class="w-[70px] h-[70px] mr-5" src="/images/icon-work.svg" alt="work">
+        </div>
+        <div class="p-5 content w-full h-5/6 bg-[#1E204A] rounded-xl hover:bg-[#35397B]">
+          <div class="content-type flex flex-row place-items-center justify-between">
+            <p class="content-name font-bold">Work</p>
+            <img class="w-6 h-6 cursor-pointer" src="/images/more.png" alt="more">
+          </div>
+          <div class="display-time lg:mt-5 flex flex-row lg:flex-col place-items-center lg:place-items-start justify-between">
+            <h1 class="current text-2xl lg:text-6xl font-light lg:mb-3">32hrs</h1>
+            <p class="previous text-sm">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="play bg-play flex flex-col rounded-xl w-full h-fit">
+        <div class="overlay w-full h-12 flex justify-end">
+          <img class="w-[70px] h-[70px] mr-5" src="/images/icon-play.svg" alt="work">
+        </div>
+        <div class="p-5 content w-full h-5/6 bg-[#1E204A] rounded-xl hover:bg-[#35397B]">
+          <div class="content-type flex flex-row place-items-center justify-between">
+            <p class="content-name font-bold">Play</p>
+            <img class="w-6 h-6 cursor-pointer" src="/images/more.png" alt="more">
+          </div>
+          <div class="display-time lg:mt-5 flex flex-row lg:flex-col place-items-center lg:place-items-start justify-between">
+            <h1 class="current text-2xl lg:text-6xl font-light lg:mb-3">32hrs</h1>
+            <p class="previous text-sm">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="study bg-study flex flex-col rounded-xl w-full h-fit">
+        <div class="overlay w-full h-12 flex justify-end">
+          <img class="w-[70px] h-[70px] mr-5" src="/images/icon-study.svg" alt="work">
+        </div>
+        <div class="p-5 content w-full h-5/6 bg-[#1E204A] rounded-xl hover:bg-[#35397B]">
+          <div class="content-type flex flex-row place-items-center justify-between">
+            <p class="content-name font-bold">Study</p>
+            <img class="w-6 h-6 cursor-pointer" src="/images/more.png" alt="more">
+          </div>
+          <div class="display-time lg:mt-5 flex flex-row lg:flex-col place-items-center lg:place-items-start justify-between">
+            <h1 class="current text-2xl lg:text-6xl font-light lg:mb-3">32hrs</h1>
+            <p class="previous text-sm">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="excercise bg-excercise flex flex-col rounded-xl w-full h-fit">
+        <div class="overlay w-full h-12 flex justify-end">
+          <img class="w-[70px] h-[70px] mr-5" src="/images/icon-exercise.svg" alt="work">
+        </div>
+        <div class="p-5 content w-full h-5/6 bg-[#1E204A] rounded-xl hover:bg-[#35397B]">
+          <div class="content-type flex flex-row place-items-center justify-between">
+            <p class="content-name font-bold">Excercise</p>
+            <img class="w-6 h-6 cursor-pointer" src="/images/more.png" alt="more">
+          </div>
+          <div class="display-time lg:mt-5 flex flex-row lg:flex-col place-items-center lg:place-items-start justify-between">
+            <h1 class="current text-2xl lg:text-6xl font-light lg:mb-3">32hrs</h1>
+            <p class="previous text-sm">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="social bg-social flex flex-col rounded-xl w-full h-fit">
+        <div class="overlay w-full h-12 flex justify-end">
+          <img class="w-[70px] h-[70px] mr-5" src="/images/icon-social.svg" alt="work">
+        </div>
+        <div class="p-5 content w-full h-5/6 bg-[#1E204A] rounded-xl hover:bg-[#35397B]">
+          <div class="content-type flex flex-row place-items-center justify-between">
+            <p class="content-name font-bold">Social</p>
+            <img class="w-6 h-6 cursor-pointer" src="/images/more.png" alt="more">
+          </div>
+          <div class="display-time lg:mt-5 flex flex-row lg:flex-col place-items-center lg:place-items-start justify-between">
+            <h1 class="current text-2xl lg:text-6xl font-light lg:mb-3">32hrs</h1>
+            <p class="previous text-sm">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="self-care bg-selfcare flex flex-col rounded-xl w-full h-fit lg:mb-0 mb-16">
+        <div class="overlay w-full h-12 flex justify-end">
+          <img class="w-[70px] h-[70px] mr-5" src="/images/icon-self-care.svg" alt="work">
+        </div>
+        <div class="p-5 content w-full h-5/6 bg-[#1E204A] rounded-xl hover:bg-[#35397B]">
+          <div class="content-type flex flex-row place-items-center justify-between">
+            <p class="content-name font-bold">Self-Care</p>
+            <img class="w-6 h-6 cursor-pointer" src="/images/more.png" alt="more">
+          </div>
+          <div class="display-time lg:mt-5 flex flex-row lg:flex-col place-items-center lg:place-items-start justify-between">
+            <h1 class="current text-2xl lg:text-6xl font-light lg:mb-3">32hrs</h1>
+            <p class="previous text-sm">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<script src="app.js"></script>
 </body>
 </html>
