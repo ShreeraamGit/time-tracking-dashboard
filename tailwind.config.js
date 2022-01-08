@@ -11,7 +11,8 @@ module.exports = {
         'social':'#7234D2',
         'selfcare':'#F1C75A',
         'profile':'#5746E9',
-        'timings':'#1E204A'
+        'timings':'#1E204A',
+        'pale-blue':'hsl(236, 100%, 87%)'
       },
       fontFamily:{
         'main':['Rubik']
