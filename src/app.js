@@ -105,4 +105,63 @@ const data = [
 
 
 
-console.log(data)
+const [work,play,study,excercise,social,care] = [...data]
+
+/// Daily
+document.querySelector(".daily").addEventListener('click',function(){
+    /// current
+    document.querySelector(".current-work").textContent = `${work.timeframes.daily.current}hrs`
+    document.querySelector(".current-play").textContent = `${play.timeframes.daily.current}hrs`
+    document.querySelector(".current-study").textContent = `${study.timeframes.daily.current}hrs`
+    document.querySelector(".current-exe").textContent = `${excercise.timeframes.daily.current}hrs`
+    document.querySelector(".current-social").textContent = `${social.timeframes.daily.current}hrs`
+    document.querySelector(".current-self").textContent = `${care.timeframes.daily.current}hrs`
+    /// previous
+    document.querySelector(".previous-work").textContent = `Last Week - ${work.timeframes.daily.previous}hrs`
+    document.querySelector(".previous-play").textContent = `Last Week - ${play.timeframes.daily.previous}hrs`
+    document.querySelector(".previous-study").textContent = `Last Week - ${study.timeframes.daily.previous}hrs`
+    document.querySelector(".previous-exe").textContent = `Last Week - ${excercise.timeframes.daily.previous}hrs`
+    document.querySelector(".previous-social").textContent = `Last Week - ${social.timeframes.daily.previous}hrs`
+    document.querySelector(".previous-self").textContent = `Last Week - ${care.timeframes.daily.previous}hrs`
+})
+
+/// Weekly
+
+document.querySelector(".weekly").addEventListener('click',function(){
+    /// current
+    document.querySelector(".current-work").textContent = `${work.timeframes.weekly.current}hrs`
+    document.querySelector(".current-play").textContent = `${play.timeframes.weekly.current}hrs`
+    document.querySelector(".current-study").textContent = `${study.timeframes.weekly.current}hrs`
+    document.querySelector(".current-exe").textContent = `${excercise.timeframes.weekly.current}hrs`
+    document.querySelector(".current-social").textContent = `${social.timeframes.weekly.current}hrs`
+    document.querySelector(".current-self").textContent = `${care.timeframes.weekly.current}hrs`
+
+    /// previous
+    document.querySelector(".previous-work").textContent = `Last Week - ${work.timeframes.weekly.previous}hrs`
+    document.querySelector(".previous-play").textContent = `Last Week - ${play.timeframes.weekly.previous}hrs`
+    document.querySelector(".previous-study").textContent = `Last Week - ${study.timeframes.weekly.previous}hrs`
+    document.querySelector(".previous-exe").textContent = `Last Week - ${excercise.timeframes.weekly.previous}hrs`
+    document.querySelector(".previous-social").textContent = `Last Week - ${social.timeframes.weekly.previous}hrs`
+    document.querySelector(".previous-self").textContent = `Last Week - ${care.timeframes.weekly.previous}hrs`
+})
+
+/// Monthly
+
+document.querySelector(".monthly").addEventListener('click',function(){
+    /// current
+    document.querySelector(".current-work").textContent = `${work.timeframes.monthly.current}hrs`
+    document.querySelector(".current-play").textContent = `${play.timeframes.monthly.current}hrs`
+    document.querySelector(".current-study").textContent = `${study.timeframes.monthly.current}hrs`
+    document.querySelector(".current-exe").textContent = `${excercise.timeframes.monthly.current}hrs`
+    document.querySelector(".current-social").textContent = `${social.timeframes.monthly.current}hrs`
+    document.querySelector(".current-self").textContent = `${care.timeframes.monthly.current}hrs`
+
+    /// previous
+
+    document.querySelector(".previous-work").textContent = `Last Week - ${work.timeframes.monthly.previous}hrs`
+    document.querySelector(".previous-play").textContent = `Last Week - ${play.timeframes.monthly.previous}hrs`
+    document.querySelector(".previous-study").textContent = `Last Week - ${study.timeframes.monthly.previous}hrs`
+    document.querySelector(".previous-exe").textContent = `Last Week - ${excercise.timeframes.monthly.previous}hrs`
+    document.querySelector(".previous-social").textContent = `Last Week - ${social.timeframes.monthly.previous}hrs`
+    document.querySelector(".previous-self").textContent = `Last Week - ${care.timeframes.monthly.previous}hrs`
+})
